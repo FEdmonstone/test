@@ -20,5 +20,6 @@ from tragicTest import views
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
+    url(r'^tragicTest/', include('tragicTest.urls')),
     url(r'^$', views.index, name='index'),
 ]
